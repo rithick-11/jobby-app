@@ -1,0 +1,12 @@
+.bg-image-home {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right;
+}
+@media all and (min-width: 768px) {
+  .bg-image-home {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+    background-position: center;
+  }
+}
