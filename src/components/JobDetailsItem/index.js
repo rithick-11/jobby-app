@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'
 import Header from '../Header'
 import JobDetailCard from '../JobDetailCard'
 import SimilarJobsCard from '../SimilarJobsCard'
-import Loader from 'react-loader-spinner'
+import { Rings } from 'react-loader-spinner'
 import { useParams } from 'react-router-dom'
 
 const jobDetailStatusConst = {
@@ -58,7 +58,7 @@ const JobDetailsItem = () => {
       case jobDetailStatusConst.isLoading:
         return (
           <div className="loader-container" data-testid="loader">
-            <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+            <Rings />
           </div>
         )
       case jobDetailStatusConst.success:
